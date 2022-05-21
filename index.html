@@ -625,6 +625,9 @@
             onComplete: function () {
                 $(".gift").css("display", "none");
                 $(".popImage .blur").addClass("active");
+
+                // FIXME 这里其实有点不完善,但算了
+                $("#next_page_button").css("display", "none");
                 // document.querySelector(".gift").classList.add("hidden");
             }
         });
