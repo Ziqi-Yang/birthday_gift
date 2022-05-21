@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>张宝, 生日快乐鸭！</title>
+    <title>xxx, 生日快乐鸭！</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="./static/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="stylesheet/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="script/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <script>
         var lighton = false;
@@ -207,7 +206,7 @@
     </path>
                     <path fill="#a88679" d="M173.667,21.571c-33.174,0-111.467,0-147.334,0c-4,0-4-16.002,0-16.002c39.836,0,105.982,0,147.334,0
 		C177.668,5.569,177.667,21.571,173.667,21.571z">
-        <animate id="bizcocho_1" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0.25 0 1 1; 0 0 1 1; 0.25 0 0.6 1" begin="2s" dur="0.8s" fill="freeze" values="
+        <animate id="bizcocho_1" attributeName="d" calcMode="spline" keySplines="0 0 1 1; 0 0 1 1; 0 0 1 1; 0.25 0 1 1; 0 0 1 1; 0.25 0 0.6 1" begin="1s" dur="0.8s" fill="freeze" values="
                           M173.667,21.571c-33.174,0-111.467,0-147.334,0c-4,0-4-16.002,0-16.002c39.836,0,105.982,0,147.334,0
 		C177.668,5.569,177.667,21.571,173.667,21.571z
                           ;
@@ -281,7 +280,6 @@
             </div>
             <div class="text">
                 <h1>happy birthday!</h1>
-<!--                这里改成张的英文名-->
                 <h2>Noah</h2>
             </div>
         </div>
@@ -589,7 +587,7 @@
     });
 
     $(".popImage img").click(function (){
-        window.location.href="https://www.wenjuan.com/s/UZBZJvKy2WW/#";
+        window.location.href="https://mh.cli.im/";
         // console.log("12");
     });
 
@@ -597,7 +595,6 @@
 
 
 <script>
-
     $(".gift").click(function (){
         openGift();
     });
@@ -623,6 +620,7 @@
                 // console.log("start");
             },
             onComplete: function () {
+                // 此处为礼品盒打开动画结束后执行的动作
                 $(".gift").css("display", "none");
                 $(".popImage .blur").addClass("active");
 
