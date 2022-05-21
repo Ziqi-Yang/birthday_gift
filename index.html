@@ -6,41 +6,6 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheet/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <script>
-        // 点击时添加.active效果
-        document.body.addEventListener('touchstart', function(e){
-            var target = e.target
-            if(target.dataset.touch === 'true'){
-                target.classList.add('active')
-            }
-        });
-
-        // 移动时判断触点是否在元素范围内
-        document.body.addEventListener('touchmove', function(e){
-            var target = e.target,
-                rect = target.getBoundingClientRect()
-            if(target.dataset.touch === 'true'){
-                // 移出元素时，取消active状态
-                if(e.changedTouches[0].pageX<rect.left || e.changedTouches[0].pageX>rect.right || e.changedTouches[0].pageY<rect.top || e.changedTouches[0].pageY>rect.bottom){
-                    target.classList.remove('active')
-                }
-            }
-        });
-
-        // 触摸结束或取消时去掉效果
-        document.body.addEventListener('touchcancel', function(e){
-            var target = e.target
-            if(target.dataset.touch === 'true'){
-                target.classList.remove('active')
-            }
-        })
-        document.body.addEventListener('touchend', function(e){
-            var target = e.target
-            if(target.dataset.touch === 'true'){
-                target.classList.remove('active')
-            }
-        })
-    </script>
 </head>
 <body >
 
@@ -213,7 +178,7 @@
     <p>张宝</p>
 </div>
 
-<div class="sitemakers">
+<div id="bulb-container">
     <div class="wrap">
         <svg class="bulb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="128px"
 	 height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
