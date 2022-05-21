@@ -1,6 +1,8 @@
 # Birthday
 仅仅是手机端  
+演示(注意使用手机模式调试) [github pages](https://ziqi-yang.github.io/birthday_gift/)  
 演示视频地址: [bilibili]() (之后再补地址)
+![second](./demo/second.png)
 
 ## 提示
 
@@ -14,3 +16,9 @@
 1. 网页标题人名
 2. 第二页人民
 3. 第三页二维码和点击跳转地址(body里倒数第二个script标签里)
+
+## Reference
+
+1. [cake](https://codepen.io/fixcl/pen/bGeWvY)
+2. [gift](https://codepen.io/Mamboleoo/pen/PZWPZx)
+3. [bulb](https://codepen.io/Colouryum/pen/MWPvzG)
