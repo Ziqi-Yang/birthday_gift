@@ -572,7 +572,7 @@
         }
     );
 
-    const music = new Audio("https://cdn-4g9y97mv2f093f3a-1300354826.tcloudbaseapp.com/Connie_Talbot-Count_on_Me.mp3");
+    const music = new Audio("./static/Connie_Talbot-Count_on_Me_compressed.mp3"); // TODO, plz use CDN instead
     music.addEventListener("ended", function (){ music.play();},false);
 
     $("#musicButton").click(function (){
@@ -586,9 +586,8 @@
         playing = !playing;
     });
 
-    $(".popImage img").click(function (){
-        window.location.href="https://mh.cli.im/";
-        // console.log("12");
+    $(".popImage img").click(function (){ // 二维码点击也可以跳转
+        window.location.href="https://mh.cli.im/";  // TODO change
     });
 
 </script>
